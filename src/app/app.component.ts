@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { environment } from '../environments/environment';
- @Component({
+  @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
@@ -13,6 +13,7 @@ export class AppComponent {
   private apiKey = environment.apiKey;
   private apiUrl = environment.apiUrl;
   private urlGraphql = environment.urlGraphql;
+  private secretKey = environment.secretkey;
 
 
   getApiKey(){
@@ -25,5 +26,8 @@ export class AppComponent {
 
   getUrlGraphql(){
     return this.urlGraphql;
+  }
+  getSecretKey(){
+    return this.secretKey;
   }
 }
