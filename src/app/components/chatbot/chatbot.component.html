@@ -1,0 +1,28 @@
+<!-- Ícono para abrir el chatbot -->
+<div *ngIf="!chatVisible" class="chatbot-open" (click)="toggleChat()">
+    <i class="fas fa-comments"></i> <!-- Icono para abrir el chat -->
+  </div>
+  
+  <!-- Ventana del chatbot -->
+  <div *ngIf="chatVisible" class="chatbot">
+    <div class="chat-header">
+      <span>Asistente Virtual</span>
+      <button class="close-btn" (click)="toggleChat()">&times;</button> <!-- Botón de cerrar -->
+    </div>
+    <div class="chat-body">
+      <div *ngFor="let message of messages" class="message" [ngClass]="message.sender">
+        {{ message.text }}
+      </div>
+    </div>
+    <form class="chat-form" (submit)="sendMessage()">
+      <input
+        type="text"
+        [(ngModel)]="userInput"
+        placeholder="Escribe tu mensaje..."
+        name="userInput"
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  
