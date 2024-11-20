@@ -157,9 +157,10 @@
 @media (max-width: 480px) {
     /* Ajustar aún más para teléfonos más pequeños */
     .chatbot {
-        width: 100%;
+        width: 95%;
         bottom: 5px;
         right: 5px;
+        left: 5px;
         border-radius: 8px;
     }
 
