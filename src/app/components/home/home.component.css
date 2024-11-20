@@ -9,7 +9,7 @@ body {
 /* Hero Section */
 .hero-section {
    
-  background: rgba(76, 155, 187, 0.19);
+  background: radial-gradient(#1a7692be,#2d5891,#173642);
    text-align: center;
   padding: 100px 20px;
   height: 100vh;
@@ -187,6 +187,7 @@ body {
   padding: 50px 20px;
   text-align: center;
   background: radial-gradient(#09f7ff, #1c4252);
+  margin-bottom: 20px;
 }
 
 .services-grid {
@@ -274,7 +275,7 @@ body {
 .footer-section {
   padding: 20px;
   text-align: center;
-  background: #004aad;
+  background: radial-gradient(#1a7692be,#2d5891,#173642);
   color: white;
 }
 
