@@ -8,26 +8,4 @@ import { environment } from '../environments/environment';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'landing-page';
-  private apiKey = environment.apiKey;
-  private apiUrl = environment.apiUrl;
-  private urlGraphql = environment.urlGraphql;
-  private secretKey = environment.secretkey;
-
-
-  getApiKey(){
-    return this.apiKey;
-  }
-
-  getApiUrl(){
-    return this.apiUrl;
-  }
-
-  getUrlGraphql(){
-    return this.urlGraphql;
-  }
-  getSecretKey(){
-    return this.secretKey;
-  }
-}
+export class AppComponent {   }

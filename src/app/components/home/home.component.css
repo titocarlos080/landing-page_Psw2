@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #004aad, #1e90ff);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .hero-section .cta-button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #004aad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f4f4f4;
+  }
+  .about-section .timeline {
+    list-style: none;
+    padding: 0;
+  }
+  .about-section .timeline li {
+    margin: 10px 0;
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .services-grid {
+    display: flex;
+    justify-content: space-around;
+  }
+  .service {
+    text-align: center;
+    width: 30%;
+  }
+  .service img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio Section */
+  .portfolio-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f4f4f4;
+  }
+  .carousel img {
+    width: 30%;
+    margin: 10px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .contact-section form input,
+  .contact-section form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .contact-section form button {
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer-section {
+    padding: 20px;
+    text-align: center;
+    background: #004aad;
+    color: white;
+  }
+  .footer-section a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    font-size: 24px;
+    color: #555; /* Color base */
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #007bff; /* Cambia el color al pasar el ratón */
+  }
+  
