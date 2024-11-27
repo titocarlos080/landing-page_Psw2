@@ -6,7 +6,7 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ChatbotService {
-  private apiUrl = 'http://hepatoscan.salud.bo:5000/chatbot'; // URL del backend
+  private apiUrl = 'http://148.113.195.163:5000/chatbot'; // URL del backend
 
   constructor(private http: HttpClient) {}
 

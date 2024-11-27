@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MailService {
-  private apiUrl = 'http://hepatoscan.salud.bo:5000/mensajes'; // URL del backend Flask
+  private apiUrl = 'http://148.113.195.163:5000/mensajes'; // URL del backend Flask
    constructor(private http: HttpClient) {}
 
   sendMail(data: any): Observable<any> {
