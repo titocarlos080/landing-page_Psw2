@@ -6,12 +6,12 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-chatbot',
   standalone: true,
-  imports: [NgClass, FormsModule,NgIf,NgForOf],
+  imports: [NgClass, FormsModule, NgIf, NgForOf],
   templateUrl: './chatbot.component.html',
   styleUrls: ['./chatbot.component.css']
 })
 export class ChatbotComponent {
-  messages: { text: string; sender: 'user' | 'bot' }[] = [];
+  messages: { text: string; sender: 'user' | 'bot' }[] = [];  // Pila de mensajes
   userInput: string = '';
   chatVisible: boolean = true; // Controla la visibilidad del chatbot
 
@@ -20,10 +20,10 @@ export class ChatbotComponent {
   sendMessage() {
     if (!this.userInput.trim()) return;
 
-    // Agregar mensaje del usuario
+    // Agregar el mensaje del usuario a la pila
     this.messages.push({ text: this.userInput, sender: 'user' });
 
-    // Llamar al servicio para obtener respuesta del bot
+    // Llamar al servicio para obtener la respuesta del bot
     this.chatbotService.getResponse(this.userInput).subscribe((response) => {
       this.messages.push({ text: response, sender: 'bot' });
     });
