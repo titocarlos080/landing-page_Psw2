@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
- 
-@Injectable({
+import { CONSTANTES } from '../constantes';
+import { HttpClient } from '@angular/common/http';
+ @Injectable({
   providedIn: 'root',
 })
 export class MailService {
-  private apiUrl = 'http://148.113.195.163:5000/mensajes'; // URL del backend Flask
-   constructor(private http: HttpClient) {}
-
+    private apiUrl = `${CONSTANTES.API_URL}/mensajes`; // Usa la constante para la URL   constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) {}
+    
   sendMail(data: any): Observable<any> {
     
     const headers = { 'Content-Type': 'application/json' };

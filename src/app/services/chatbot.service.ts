@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
+import { CONSTANTES } from '../constantes';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ChatbotService {
-  private apiUrl = 'http://148.113.195.163:5000/chatbot'; // URL del backend
+   private apiUrl = `${CONSTANTES.API_URL}/chatbot`; // Usa la constante para la URL   constructor(private http: HttpClient) {}
 
   constructor(private http: HttpClient) {}
 
